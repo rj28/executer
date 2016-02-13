@@ -53,7 +53,6 @@ function logException(Exception $e, $mail = true) {
 				urldecode($request->getHTTPReferer()),
 				$request->getClientAddress(), $request->getScheme(), $request->getHttpHost()
 				. urldecode(isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : '<!undefined>'),
-				Person::getLogged() ? Person::getLogged()->person_id . ' ' . Person::getLogged()->getFullName() : 'none',
 				$e->getTraceAsString()
 			);
 
