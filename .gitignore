@@ -1,0 +1,9 @@
+/composer.lock
+/vendor
+/app/config/config.php
+*.log
+/templates_c
+/log
+/.idea
+/app/cache/*
+.git11/
