@@ -11,12 +11,6 @@ $db->execute("
 		PRIMARY KEY (job_id) USING BTREE
 	) ENGINE = InnoDB;
 	
-	CREATE TABLE `exec_settings` (
-		`key` varchar(255) NOT NULL,
-		`value` longblob NULL,
-		PRIMARY KEY (`key`) USING BTREE
-	) ENGINE = MyISAM;
-	
 	CREATE TABLE `exec_task` (
 		`task_id` int(10) unsigned NOT NULL auto_increment,
 		`script` varchar(255) NOT NULL,
